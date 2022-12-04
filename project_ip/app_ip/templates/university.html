@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>Университет</title>
+</head>
+<body>
+    <a href='/app_ip/universities/'>Список университетов</a>
+    <br/>
+    <br/>
+    <form method='POST'>
+        {% csrf_token %}
+        <table>
+            {{ form }}
+        </table>
+        <br/>
+        <input type='submit' value='Отправить'>
+    </form>
+</body>
+</html>
